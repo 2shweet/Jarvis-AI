@@ -21,18 +21,19 @@ def speak(audio):
 
 
 def internet_commands():
-    if 'hey jarvis take me to google' in understand:
+    if 'google' in understand:
         speak('hold on heading over to google now')
         webbrowser.open('www.google.com')
-    if 'hey jarvis take me to open my rene sola stock' in understand:
-        speak('inshallah winning today with rene sola')
-        webbrowser.open('https://m.investing.com/equities/renesola-ltd-news')
-    if 'hey jarvis take me to open my dropbox stock' in understand:
-        speak('inshallah winning today with Dropbox')
-        webbrowser.open('https://m.investing.com/equities/dropbox-inc')
-    if 'hey jarvis take me to open my peabody stock' in understand:
-        speak('insh allah winning today with peabody')
-        webbrowser.open('https://m.investing.com/equities/peabody-energy-corp')
+    if 'youtube' in understand:
+        speak('Cat videos here we come')
+        webbrowser.open('www.youtube.com')
+    if 'stackoverflow' in understand:
+        speak('Get your code on')
+        webbrowser.open('www.stackoverflow.com')
+        #continue adding your sites like this
+    #if '' in understand:
+        #speak('')
+        #webbrowser.open('')
 
 
 def time_date():
@@ -42,8 +43,6 @@ def time_date():
         speak("the time today is {0}".format(time))
     if 'hey jarvis tell me the date' in understand:
         speak('the date today is {0}'.format(date))
-    if 'hey jarvis what is today' in understand:
-        speak('today is {0}'.format(date) + 'at {0}'.format(time))
 
 
 def applications():
